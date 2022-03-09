@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moran Shipping Agencies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div><h1>All Ports</h1></div>
+    <a href="#">Baltimore, MD</a>
+    <a href="#">Boston, MA</a>
+    <a href="#">Charleston, SC</a>
+    <a href="#">Corpus Christi, TX</a>
+    <a href="#">Fort Lauderdale, FL</a>
+    <a href="#">Freeprt, TX</a>
+    <a href="#">Galveston, TX</a>
+    <a href="#">Houston, TX</a>
+    <a href="#">Jacksonville, FL</a>
+    <a href="#">Lake Charles, LA</a>
+    <a href="#">Long Beach, CA</a>
+    <a href="#">West Haven, CT</a>
+    <a href="#">New Orleans, LA</a>
+    <a href="#">Philadelphia, PA</a>
+    <a href="#">Port Arthur, TX</a>
+    <a href="#">Port Canaveral, FL</a>
+    <a href="#">Portland, ME</a>
+    <a href="#">Providence, RI</a>
+    <a href="#">San Francisco, CA</a>
+    <a href="#">Savannah, GA</a>
+    <a href="#">Tampa FL</a>
+    <a href="#">New York, NY (NJ Office)</a>
+    </div>
+        <div id="main" class="main">
+            <div class="header-container">
+                <div class="logo">
+                    <img src="moranlogo.png" alt="" width="130">
+                </div>
+                <nav>
+                    <ul>
+                        <li>Subscribe</li>
+                        <li>Ports<span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span> </li>
+                    </ul>
+                </nav>
+            </div>
+            <video autoplay muted loop id="myVideo">
+                <source src="oil.mp4" type="video/mp4">
+              </video>
+              
+          </div>
+
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginRight= "0";
+    document.body.style.backgroundColor = "white";
+  }
+        
+    </script>
+</body>
+</html>
